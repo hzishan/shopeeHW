@@ -6,6 +6,7 @@ import CheckoutPage from "./pages/CheckoutPage"
 import ProductCollectionPage from "./pages/ProductCollectionPage"
 import ProductPage from "./pages/ProductPage"
 
+import 'antd/dist/reset.css';
 
 
 const App = ()=>{

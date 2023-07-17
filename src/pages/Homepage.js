@@ -5,14 +5,9 @@ import Clearfix from "../components/common/ClearFix";
 
 const HomePage =()=>{
     return <DefaultLayout fixedHeader>
-        <Clearfix/>
+        {/* <Clearfix/> */}
         HomePage
         <p>
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
             Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
             Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
             Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
