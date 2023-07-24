@@ -48,7 +48,7 @@ const Box =styled.div`
 `
 
 const Header=(props)=>{
-    const { isAuthenticated }=useContext(AuthContext)
+    const { isAuthenticated,logout }=useContext(AuthContext)
     return(
     <StyledHeader fixed={props.fixed}>
         <Container> 
@@ -64,9 +64,12 @@ const Header=(props)=>{
                     <a href="#!">幫助中心</a>
                     {/* {console.log("hah",isAuthenticated)} */}
                     {isAuthenticated ? (
-                        <a href="#!">帳號</a>
+                        <div>
+                            <a href="#!">kevin</a>
+                            <span onClick={()=>logout()}>logout</span>
+                        </div>
                         ) : (
-                            <a href="#!">登入/註冊</a>
+                            <Link to="/login">登入/註冊</Link>
                         )}
                     
                 </Toolbar>

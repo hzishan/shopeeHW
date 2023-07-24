@@ -9,6 +9,7 @@ import ProductPage from "./pages/ProductPage"
 import 'antd/dist/reset.css';
 import ScrollToTop from "./components/common/ScrollToTop";
 import { AuthProvider } from "./components/auth/AuthContext";
+import LoginPage from "./pages/LoginPage";
 
 
 const App = ()=>{
@@ -19,6 +20,7 @@ const App = ()=>{
         <Routes>
           <Route exact path="/" element={<Navigate to="/mall"/>} />
           <Route exact path="/mall" element={<HomePage/>} />
+          <Route exact path="/login" element={<LoginPage/>} />
           <Route exact path="/cart" element={<CartPage/>} />
           <Route exact path="/checkout" element={<CheckoutPage/>} />
           <Route exact path="/mall/:categoryName" element={<ProductCollectionPage/>} />
