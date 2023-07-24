@@ -1,16 +1,24 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useContext } from "react";
+import styled,{css} from "styled-components";
 import Container from "../common/Container";
 import logo from "../../images/shopee_logo.png";
 import { Input } from 'antd';
 import {ShoppingCartOutlined} from '@ant-design/icons';
 import { Link } from "react-router-dom";
+import AuthContext from "../auth/AuthContext";
 
 
 const StyledHeader=styled.header`
     background-color: #FA5130;
     width:100vw;
     padding: 16px 0px;
+    ${(props) =>
+        props.fixed &&
+        css`
+            z-index:50;
+            position: sticky;
+            top: 0;
+        `}
     `;
 
 const StyledHeaderSection=styled.div`
@@ -39,9 +47,10 @@ const Box =styled.div`
     align-items:center;
 `
 
-const Header=()=>{
+const Header=(props)=>{
+    const { isAuthenticated }=useContext(AuthContext)
     return(
-    <StyledHeader>
+    <StyledHeader fixed={props.fixed}>
         <Container> 
             <StyledHeaderSection>
                 <Navigate>
@@ -53,7 +62,13 @@ const Header=()=>{
                 <Toolbar>
                     <a href="#!">通知</a>
                     <a href="#!">幫助中心</a>
-                    <a href="#!">帳號</a>
+                    {/* {console.log("hah",isAuthenticated)} */}
+                    {isAuthenticated ? (
+                        <a href="#!">帳號</a>
+                        ) : (
+                            <a href="#!">登入/註冊</a>
+                        )}
+                    
                 </Toolbar>
             </StyledHeaderSection>
             <StyledHeaderSection>

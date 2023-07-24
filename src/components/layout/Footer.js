@@ -3,10 +3,10 @@ import styled, { css } from "styled-components";
 import Container from "../common/Container";
 import { Link } from "react-router-dom";
 
-import mart from "../../images/mart.png";
-import shopeePackage from "../../images/shopee_package.png";
-import payment from "../../images/payment.png";
-import shopeeDownloadQrcode from "../../images/shopeeDownloadQrcode.png";
+import mart from "../../images/footersm/mart.png";
+import shopeePackage from "../../images/footersm/shopee_package.png";
+import payment from "../../images/footersm/payment.png";
+import shopeeDownloadQrcode from "../../images/footersm/shopeeDownloadQrcode.png";
 
 const StyledFooter=styled.div`
     background-color: #FBFBFB;
@@ -70,7 +70,7 @@ const Footer=()=>{
                     <div>
                         <div>AppStore</div>
                         <div>GooglePlay</div>
-                        <div>ApppGallery</div>
+                        <div>AppGallery</div>
                     </div>
                 </Box>
             </FooterColumn>
