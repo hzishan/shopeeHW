@@ -9,6 +9,7 @@ import test3 from "../images/banner/test3.jpg";
 import { Link } from "react-router-dom";
 import ProductCard from "../components/product/ProductCard";
 import AuthContext from "../components/auth/AuthContext";
+import PopupModal from "../components/common/PopupModal";
 
 const BannerBox=styled.div`
     display:flex;
@@ -75,6 +76,7 @@ const Image=styled.div`
 const HomePage =()=>{
     const {isAuthenticated}=useContext(AuthContext);
     return <DefaultLayout fixedHeader>
+        <PopupModal/>
         <Clearfix />
         {isAuthenticated&&<h1>welcome</h1>}
         <BannerBox>
