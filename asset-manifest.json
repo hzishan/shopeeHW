@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shopeeHW/static/css/main.dd1ea7b7.css",
+    "main.js": "/shopeeHW/static/js/main.ae71dd39.js",
+    "static/js/787.da544366.chunk.js": "/shopeeHW/static/js/787.da544366.chunk.js",
+    "static/media/test2.jpg": "/shopeeHW/static/media/test2.6a3927a448f31b760413.jpg",
+    "static/media/test3.jpg": "/shopeeHW/static/media/test3.df6d39332987e90d56c8.jpg",
+    "static/media/test.jpg": "/shopeeHW/static/media/test.5f0b37cc6fdfc1fd7a82.jpg",
+    "static/media/twiter.png": "/shopeeHW/static/media/twiter.34aef46387b5a5d5392f.png",
+    "static/media/messager.png": "/shopeeHW/static/media/messager.a905202152a6bc5257b0.png",
+    "static/media/payment.png": "/shopeeHW/static/media/payment.7bc6d3e2b9ca132cff89.png",
+    "static/media/mart.png": "/shopeeHW/static/media/mart.a701ef6f3c120e5981b1.png",
+    "static/media/shopee_logo.png": "/shopeeHW/static/media/shopee_logo.e2beac18437426eecb71.png",
+    "index.html": "/shopeeHW/index.html",
+    "main.dd1ea7b7.css.map": "/shopeeHW/static/css/main.dd1ea7b7.css.map",
+    "main.ae71dd39.js.map": "/shopeeHW/static/js/main.ae71dd39.js.map",
+    "787.da544366.chunk.js.map": "/shopeeHW/static/js/787.da544366.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd1ea7b7.css",
+    "static/js/main.ae71dd39.js"
+  ]
+}
