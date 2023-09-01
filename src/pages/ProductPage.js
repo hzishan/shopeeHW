@@ -1,37 +1,40 @@
 import React from "react";
 import DefaultLayout from "../components/layout/DefaultLayout";
+import ProductDisplay from "../components/product/ProductDisplay";
+import ProductRating from "../components/product/ProductRating";
+import ProductTitle from "../components/common/ProductTitle";
+import SallerInformation from "../components/saller/SallerInformation";
+import { styled } from "styled-components";
 
-const ProductPage =()=>{
-    return <DefaultLayout>ProductPage
-        <p>
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-            Excepteur adipisicing ullamco proident irure incididunt qui do quis cillum pariatur non quis. Occaecat elit id eu consequat. Cupidatat do proident velit quis nisi in ullamco amet Lorem commodo enim dolore.
-        </p>
+const productBasicList=["Discount","Transport","Color","Style","Amount"];
+
+
+const ProductPage =({
+    productImg,
+    productRegular,
+    productInformation,
+})=>{
+    return <DefaultLayout>
+        <div>
+            <ProductDisplay 
+                imgUrl={productImg}
+            />
+        </div>
+        <div>
+            <SallerInformation
+                sallerName="haha"
+            />
+        </div>
+        <div>
+            <ProductTitle>Regular</ProductTitle>
+            {productRegular}
+            <ProductTitle>Information</ProductTitle>
+            {productInformation}
+        </div>
+        <div>
+            <ProductTitle>Rating</ProductTitle>
+            <ProductRating rating={4.6}></ProductRating>
+        </div>
 
     </DefaultLayout>;
 };

@@ -54,7 +54,7 @@ const Header=(props)=>{
         <Container> 
             <StyledHeaderSection>
                 <Navigate>
-                    <a href="#!">蝦皮購物</a>
+                    <a href="/mall">蝦皮購物</a>
                     <a href="#!">下載</a>
                     <a href="#!">追蹤我們</a>
                     <a href="#!">部落格</a>
@@ -62,12 +62,8 @@ const Header=(props)=>{
                 <Toolbar>
                     <a href="#!">通知</a>
                     <a href="#!">幫助中心</a>
-                    {/* {console.log("hah",isAuthenticated)} */}
                     {isAuthenticated ? (
-                        <div>
-                            <a href="#!">kevin</a>
                             <span onClick={()=>logout()}>logout</span>
-                        </div>
                         ) : (
                             <Link to="/login">登入/註冊</Link>
                         )}

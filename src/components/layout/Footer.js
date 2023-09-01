@@ -44,13 +44,25 @@ const Footer=()=>{
             <FooterColumn>
                 <FooterColTitle>客服中心</FooterColTitle>
                 <Link ro="#!">客服中心</Link>
-                <Link>客服中心</Link>
-                <Link>客服中心</Link>
-                <Link>客服中心</Link>
-                <Link>客服中心</Link>
+                <Link>蝦皮商城</Link>
+                <Link>付款方式</Link>
+                <Link>蝦皮錢包</Link>
+                <Link>蝦幣</Link>
+                <Link>運費補助</Link>
+                <Link>退貨退款</Link>
+                <Link>聯絡客服</Link>
+                <Link>防詐騙宣傳</Link>
+                <Link>延長訂單撥款</Link>
             </FooterColumn>
             <FooterColumn>
                 <FooterColTitle>關於蝦皮</FooterColTitle>
+                <Link ro="#!">加入我們</Link>
+                <Link>蝦皮條款</Link>
+                <Link>隱私權政策</Link>
+                <Link>蝦皮商城</Link>
+                <Link>賣家中心</Link>
+                <Link>限時特賣</Link>
+                <Link>聯絡媒體</Link>
             </FooterColumn>
             <FooterColumn>
                 <FooterColTitle>付款</FooterColTitle>
@@ -62,6 +74,26 @@ const Footer=()=>{
             </FooterColumn>
             <FooterColumn>
                 <FooterColTitle>關注我們</FooterColTitle>
+                <Link to="https://facebook.com/ShopeeTW" class="FA0WjS">
+                    <img class="_6ZyW8Y" src="https://down-tw.img.susercontent.com/file/952b3cd5f11daa5242f9448fb76b5ae2"/>
+                    <span class="xTjlXx">Facebook</span>
+                </Link>
+                <Link to="https://instagram.com/Shopee_TW" class="FA0WjS">
+                    <img class="_6ZyW8Y" src="https://down-tw.img.susercontent.com/file/fc9052e647a0ec204e480fc27a35309f"/>
+                    <span class="xTjlXx">Instagram</span>
+                </Link>
+                <Link to="https://page.line.me/shopee?openQrModal=true" class="FA0WjS">
+                    <img class="_6ZyW8Y" src="https://down-tw.img.susercontent.com/file/8e2a1c69fe7255b705d0687c779fa962"/>
+                        <span class="xTjlXx">Line</span>
+                </Link>
+                <Link to="https://linkedin.com/company/shopee" class="FA0WjS">
+                    <img class="_6ZyW8Y" src="https://down-tw.img.susercontent.com/file/144b82f1a4b78ebdc1ea68ec15a9eeae"/>
+                    <span class="xTjlXx">LinkedIn</span>
+                </Link>
+                <Link to="https://shopee.tw/blog" class="FA0WjS">
+                    <img class="_6ZyW8Y" src="https://down-tw.img.susercontent.com/file/b3153fde9f151c179cb2b4d854205ab9"/>
+                    <span class="xTjlXx">蝦品輯部落格</span>
+                </Link>
             </FooterColumn>
             <FooterColumn>
                 <FooterColTitle>下載進度</FooterColTitle>

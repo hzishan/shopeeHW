@@ -45,7 +45,6 @@ const ProductContainer=styled.div`
     @media (min-width:769px){
         width:16.66%;
     }
-
 `;
 const BannerCarouselContainer=styled.div`
     width:100%;
@@ -76,9 +75,9 @@ const Image=styled.div`
 const HomePage =()=>{
     const {isAuthenticated}=useContext(AuthContext);
     return <DefaultLayout fixedHeader>
-        <PopupModal/>
+        {/* <PopupModal/> */}
         <Clearfix />
-        {isAuthenticated&&<h1>welcome</h1>}
+        {/* {isAuthenticated&&<h1>welcome</h1>} */}
         <BannerBox>
             <BannerCarouselContainer> 
                <Carousel autoplay>
