@@ -7,14 +7,26 @@ import messager from '../../images/media_app/messager.png'
 import fb from '../../images/media_app/fb.png'
 import like from '../../images/media_app/like.jpg'
 import testimg from '../../images/banner/test.jpg'
-
+const ProductTop=styled.div`
+    display:flex;
+    @media (max-width:610px){
+        display:block;
+    }
+`;
 const ProductTopLeft=styled.div`
     width:50%;
     margin:8px 8px 0px 0px;
+    @media (max-width:610px){
+        width:100%;
+        
+    }
 `;
 const ProductTopRight=styled.div`
     width:50%;
     margin:8px 0 0 8px;
+    @media (max-width:610px){
+        width:100%;
+    }
 `;
 
 const SquareImg=styled.div`
@@ -32,8 +44,10 @@ const ThumbnailSpace=styled.div`
         margin-right:8px;
     }
 `;
+
 const RowTop=styled.div`
     display:flex;
+    align-items: center;
     justify-content: space-between;
     padding-top:16px;
     padding-bottom:16px;
@@ -60,7 +74,7 @@ const ProductDisplay=({
     Productstyle,
     })=>{
         return (
-            <div style={{display:"flex"}}>
+            <ProductTop>
                 <ProductTopLeft>
                     <div>
                         <SquareImg url={testimg} height={72}/>
@@ -74,13 +88,10 @@ const ProductDisplay=({
                             <img src={twiter} alt="twiter" height={28} style={{borderRadius:"20px"}}></img>
                             <img src={messager} alt="messager" height={28}></img>
                             <img src={fb} alt="messager" height={28}></img>
-                        </ThumbnailSpace>
-                        <div>
-                            <span>like：</span>
+                            <span style={{marginLeft:"8px"}}>like：</span>
                             <img src={like} alt="messager" height={28}></img>
-                        </div>                        
+                        </ThumbnailSpace>
                     </RowSpace>
-                    
                 </ProductTopLeft>
                 <ProductTopRight>
                     <div>{title}</div>
@@ -88,8 +99,10 @@ const ProductDisplay=({
                         <div>
                             <span style={{color:"#ee4d2d"}}>4.9 </span>
                             <Rate disabled allowHalf defaultValue={4.9} style={{color:"#ee4d2d"}}/>
-                        </div>|
-                        <div>2.2w rating</div>|                      
+                        </div>
+                        <div>|</div>
+                        <div>2.2w rating</div>        
+                        <div>|</div>
                         <div>5.8w saled</div>                        
                     </RowTop>
                     <PurchaseTable/>
@@ -99,7 +112,7 @@ const ProductDisplay=({
                         <div>正品保障</div>
                     </RowSpace>
                 </ProductTopRight>
-            </div>
+            </ProductTop>
         );
     };
 

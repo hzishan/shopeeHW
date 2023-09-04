@@ -9,51 +9,90 @@ const ProductSaller=styled.div`
     display:flex;
     background-color:#f5f5f5;
     padding:8px;
+    @media (max-width:712px){
+        flex-wrap:wrap;
+    }
 `;
 const ProductSallerLeft=styled.div`
     display:flex;
     width:30%;
-    justify-content: space-evenly;
+    align-items: center;
+    img{
+        height:84px;
+    }
     div{
-        margin: 0.2em;
+        margin:8px;
     }
     button{
         width:45%;
         margin-right:8px;
     }
+    @media (max-width:1046px){
+        width:40%;
+    }
+    @media (max-width:850px){
+        width:50%;
+    }
+    @media (max-width:712px){
+        width:100%;
+        div{
+            display:flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        img{
+            height:48px;
+        }
+    }
 `;
 const ProductSallerRight=styled.div`
     display:flex;
     width:70%;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     align-content: space-around;
     border-left:1px solid #868686;
     div{
         display:flex;
         width:30%;
+        align-items: center;
         margin-left:8px;
+        flex-wrap:nowrap;
         div{
-            width:50%;
+            width:70%;
             color:#868686;
+            display: inline-block;
+            white-space: nowrap;
         }
         span{
+            width:30%;
             color:#d2416a;
         }
     }
+    @media (max-width:712px){
+        width:100%;
+        border-top:1px solid #868686;
+        border-left:none;
+        padding-top:8px;
+        div{
+            width:30%;
+        }
+    }
+
 `;
+
 const SallerInformation=({
     sallerName
 })=>{
     return <ProductSaller>
         <ProductSallerLeft>
             <Link to="/">
-                <img src={sallerLogo} height={84}/>
+                <img src={sallerLogo}/>
             </Link>
             <div>
-                <ProductTitle>{sallerName}</ProductTitle>
+                <div style={{fontSize:"24px",fontWeight:"bold"}}>{sallerName}</div>
                 <div>32 mins ago</div>
                 <div>
-                    <Button danger>conduct</Button>
+                    <Button danger style={{textAlign:"center"}}>conduct</Button>
                     <Button>market</Button>
                 </div>
             </div>

@@ -10,13 +10,25 @@ const RatingLeft=styled.div`
     justify-content: center;
     align-items:center;
     color:#ee4d2d;
+    @media (max-width:900px){
+        width:30%;
+    }
+    @media (max-width:624px){
+        width:40%;
+    }
+    @media (max-width:512px){
+        width:45%;
+    }
 `
 const RatingRight=styled.div`
     display:flex;
     flex-wrap:wrap;
     width:100%;
     button{
-        width:15%;
+        // width:15%;
+        width:86px;
+        overflow:hidden;
+        // margin-left:8px;
         margin:8px 8px 8px 0;
         padding:5px;
         
@@ -24,6 +36,13 @@ const RatingRight=styled.div`
         background-color:#ffffff;
         border:2px solid #ebebeb;
     }
+    @media (max-width:560px){
+        button{
+            font-size: 12px;
+            width:68px;
+        }
+    }
+
 `
 
 const RatingNum=styled.div`

@@ -78,7 +78,8 @@ const Header=(props)=>{
                     <Input.Search 
                         style={{marginRight:8}}
                         placeholder="在商城搜尋"
-                        onSearch={(value) => console.log(value)} 
+                        // onSearch={(value) => console.log(value)} 
+                        onSearch={<Link to="/mall/poo1"/>} 
                         enterButton 
                     />
                     <Link to="/cart">

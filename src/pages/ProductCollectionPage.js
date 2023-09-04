@@ -12,25 +12,25 @@ import ProductMenu from "../components/product/ProductMenu";
 
 const LeftCollectionPage=styled.div`
     display:flex;
-    width:30%;
-    @media (min-width:577px){
-        width:20%;
-    }
-    @media (min-width:769px){
-        width:15%;
-    }
+    width:20%;
+    // @media (max-width:577px){
+    //     width:20%;
+    // }
+    // @media (max-width:769px){
+    //     width:15%;
+    // }
 `;
 
 const RightCollectionPage=styled.div`
     display:flex;
-    width:70%;
+    width:80%;
     flex-wrap:wrap;
-    @media (min-width:577px){
-        width:80%;
-    }
-    @media (min-width:769px){
-        width:85%;
-    }
+    // @media (max-width:577px){
+    //     width:80%;
+    // }
+    // @media (max-width:769px){
+    //     width:85%;
+    // }
 
 `;
 
@@ -47,11 +47,9 @@ const ProductContainer=styled.div`
 
 const ProductCollectionPage =()=>{
     return <DefaultLayout fixedHeader>
-        <div style={{display:"flex"}}>
+        {/* <div style={{display:"flex"}}> */}
         <LeftCollectionPage >
-            <div>
-                <ProductMenu/>
-            </div>
+            <ProductMenu/>
         </LeftCollectionPage>
         <RightCollectionPage>
             <ProductContainer>
@@ -102,7 +100,7 @@ const ProductCollectionPage =()=>{
                 <ProductCard title="foo" salePrices={[100,200]} listPrices={[200,299]} coverUrl={test3}/>
             </ProductContainer>
         </RightCollectionPage>
-        </div>
+        {/* </div> */}
     </DefaultLayout>;
 };
 

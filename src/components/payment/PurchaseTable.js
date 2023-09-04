@@ -7,8 +7,10 @@ import { styled } from "styled-components";
 const RowDiv=styled.div`
     display:flex;
     color:#868686;
+    justify-content: space-between;
     align-items: center;
     span{
+        white-space:nowrap;
         padding:6px;
         width:30%;
     }
@@ -20,7 +22,6 @@ const NumInput=styled.input`
 `;
 const CouponDiv=styled.div`
     display:flex;
-    
     div{
         padding:6px;
         margin:0 8px;
